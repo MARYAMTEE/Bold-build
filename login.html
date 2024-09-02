@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>login/register</title>
+</head>
+
+<!-- This is the header -->
+<header>
+    <div class="header"></div>
+</div>
+</header>
+
+<body>
+    <!-- Logo -->
+    <div class="topleft">
+        <img src="logo.png" width="100">
+    </div>
+
+    <div id="contact-us-banner">
+        <img src="banner1.jpg" width="1280" height="500">
+     </div>
+
+     <div class="center-contact">
+            <h1>Login<span>/</span>Sign Up</h1>
+            <p style="color: white;">Click on any of the buttons to register or sign up</p>
+            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <button onclick="document.getElementById('id02').style.display='block'">Sign Up</button>
+        </div>
+        
+
+        <!-- Login Form -->
+         <div id="id01" class="modal">
+
+        <form class="modal-content animate">
+            
+            <div class="img-container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"> &times; </span>
+                <img src="img_avatar.png" class="avatar">
+            </div>
+
+            <div class="container-contact">
+                <label for="username"><b>Username</b></label>
+                <input class="input" type="text" placeholder="Enter Username" required>
+
+                <label for="password"><b>Password</b></label>
+                <input class="input" type="password" placeholder="Enter Password" required>
+                
+                <button type="submit" class="login-btn">Login</button>
+
+                <input type="checkbox" checked="checked" name="remember">
+                <label for="rememberme">Remember me</label>
+            </div>
+
+            <div class="container-contact">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw"> <a href="#">Forget password?</a></span>
+            </div>
+
+        </form>
+         </div>
+
+
+         <!-- Sign UP Form -->
+         <div id="id02" class="modal-2">
+
+            <span onclick="document.getElementById('id02').style.display='none'" class="closeX" title="Close Modal"> &times; </span>
+
+          <form class="modal-content-2">
+
+            <div class="container-contact-2">
+                <h1>Sign Up</h1>
+                <br>
+                <p>Please Fill in this form to create an account</p>
+                <hr class="hr">
+                <label for="email"><b>Email</b></label>
+      <input class="input-text" type="email" placeholder="Enter Email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input class="input-text" type="password" placeholder="Enter Password" required>
+
+      <label for="psw"><b>Repeat Password</b></label>
+      <input class="input-text" type="password" placeholder="Enter Password" required>
+
+      <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+
+        <p>By creating an account you agree to our <a href="#">Terms & Conditions</a></p>
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="btn1">Cancel</button>
+        <button type="button" class="btn2">Sign Up</button>
+
+            </div>
+          </form>
+    </div>
+
+    
+</body>
+</html>

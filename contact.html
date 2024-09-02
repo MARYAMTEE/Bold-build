@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+    <title>Contact-Us</title>
+    
+</head>
+
+<header>
+    <div class="header"></div>
+</header>
+
+<body>
+
+    <!-- Logo -->
+    <div class="topleft">
+        <img src="logo.png" width="100">
+    </div>
+
+    <!-- banner -->
+     <div id="login-img">
+   <img src="banner2.jpg" width="1263" height="700">
+</div>
+
+
+    <!-- Contact Us Box right hand side-->
+     <div class="container-login">
+        <h1>Contact Us</h1>
+        <form class="form-login">
+            <input class="input-login" type="email"  placeholder="Enter your Name" required><br>
+            <input class="input-login" type="text"  placeholder="Enter a valid email address" required><br>
+            <textarea class="textarea" type="text" placeholder="Kindly write your message"></textarea>
+        </form>
+        <button  onclick="document.getElementById('myBtn').style.display='block'">SUBMIT</button>
+     </div>
+
+     <!-- Modal -->
+     <div id="myBtn" class="myModal">
+
+        <div class="container-modal">
+
+            <i class="far fa-check-circle"></i>
+            <h2>Successful</h2>
+
+            <br>
+            <p style="color: black;">Thank you for reaching out to us! We've received your message and will get back to you shortly. 
+                Kindly check your email for our feedback. If you have any urgent questions, please feel free to reach us at bbuild@gmail.com 
+                We look forward to discussing your project and how we can assist you</p>
+        <br>
+                <button type="button" onclick="document.getElementById('myBtn').style.display='none'" class="cancelbtn">OK</button>
+        
+            </div>
+
+      </div>
+
+     <!-- Contact Boxes At the left hand side-->
+     <div class="contact-us">
+
+        <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3 class="h3">OUR MAIN OFFICE</h3>
+            <p>123, Orile Road, Tabon Tabon Agege Lagos</p>
+        </div>
+
+        <div class="location">
+            <i class="fas fa-phone-alt"></i>
+            <h3 class="h3">PHONE NUMBER</h3>
+            <p>+234-80-2790-6067</p>
+        </div>
+
+        <div class="location">
+            <i class="fas fa-envelope"></i>
+            <h3  class="h3">EMAIL ADDRESS</h3>
+            <p>bb@gmail.com</p>
+        </div>
+
+        <div class="location">
+            <i class="fas fa-fax"></i>
+            <h3  class="h3">FAX</h3>
+            <p>(123)-456-7890</p>
+        </div>
+
+     </div>
+    
+
+</body>
+</html>
